@@ -1,18 +1,15 @@
-SpreeBootstrap
-==============
+# SpreeBootstrap
+
+[![Build Status](https://secure.travis-ci.org/futhr/spree_bootstrap.png)](http://travis-ci.org/futhr/spree_bootstrap)
+[![Code Climate](https://codeclimate.com/github/jdutil/spree_bootstrap.png)](https://codeclimate.com/github/jdutil/spree_bootstrap)
+[![Coverage Status](https://coveralls.io/repos/futhr/spree_bootstrap/badge.png?branch=master)](https://coveralls.io/r/futhr/spree_bootstrap)
+[![Dependency Status](https://gemnasium.com/futhr/spree_bootstrap.png?travis)](https://gemnasium.com/futhr/spree_bootstrap)
 
 This project aims to replace the spree_frontend's use of the skeleton css framework in favor of Twitter Bootstrap.
 
-[![Build Status](https://secure.travis-ci.org/jdutil/spree_bootstrap.png)](http://travis-ci.org/jdutil/spree_bootstrap)
-[![Code Climate](https://codeclimate.com/github/jdutil/spree_bootstrap.png)](https://codeclimate.com/github/jdutil/spree_bootstrap)
-[![Coverage Status](https://coveralls.io/repos/jdutil/spree_bootstrap/badge.png?branch=master)](https://coveralls.io/r/jdutil/spree_bootstrap)
-[![Dependency Status](https://gemnasium.com/jdutil/spree_bootstrap.png?travis)](https://gemnasium.com/jdutil/spree_bootstrap)
+## Installation
 
-
-Installation
-------------
-
-Add spree_bootstrap to your Gemfile:
+Add to your `Gemfile`
 
 ```ruby
 gem 'spree_bootstrap', github: 'jdutil/spree_bootstrap'
@@ -25,8 +22,7 @@ bundle
 bundle exec rails g spree_bootstrap:install
 ```
 
-Testing
--------
+## Testing
 
 Be sure to bundle your dependencies and then create a dummy test app for the specs to run against.
 

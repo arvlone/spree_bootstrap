@@ -1,5 +1,6 @@
 require 'spree_core'
 require 'bootstrap-sass'
 require 'font-awesome-rails'
+require 'spree_bootstrap/version'
 require 'spree_bootstrap/engine'
 require 'spree_frontend'

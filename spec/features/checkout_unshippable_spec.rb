@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe "checkout with unshippable items" do
-  let!(:stock_location) { create(:stock_location) }
-  let(:order) { OrderWalkthrough.up_to(:address) }
+feature "checkout with unshippable items" do
+  given!(:stock_location) { create(:stock_location) }
+  given(:order) { OrderWalkthrough.up_to(:address) }
 
-  before do
+  background do
     OrderWalkthrough.add_line_item!(order)
     line_item = order.line_items.last
     stock_item = stock_location.stock_item(line_item.variant)
@@ -16,15 +16,15 @@ describe "checkout with unshippable items" do
     order.user = user
     order.update!
 
-    Spree::CheckoutController.any_instance.stub(:current_order => order)
-    Spree::CheckoutController.any_instance.stub(:try_spree_current_user => user)
+    Spree::CheckoutController.any_instance.stub(current_order: order)
+    Spree::CheckoutController.any_instance.stub(try_spree_current_user: user)
     Spree::CheckoutController.any_instance.stub(:skip_state_validation? => true)
-    Spree::CheckoutController.any_instance.stub(:ensure_sufficient_stock_lines => true)
+    Spree::CheckoutController.any_instance.stub(ensure_sufficient_stock_lines: true)
   end
 
-  it 'displays and removes' do
+  scenario "displays and removes" do
     visit spree.checkout_state_path(:delivery)
-    page.should have_content('Unshippable Items')
+    page.should have_content("Unshippable Items")
 
     click_button "Save and Continue"
 
@@ -32,4 +32,3 @@ describe "checkout with unshippable items" do
     order.line_items.count.should eq 1
   end
 end
-

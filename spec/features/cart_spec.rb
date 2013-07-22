@@ -1,18 +1,18 @@
 require 'spec_helper'
 
-describe "Cart" do
-  it "shows cart icon on non-cart pages" do
+feature "Cart" do
+  scenario "shows cart icon on non-cart pages" do
     visit spree.root_path
-    lambda { find("li#link-to-cart a") }.should_not raise_error(Capybara::ElementNotFound)
+    expect { find("li#link-to-cart a") }.not_to raise_error
   end
 
-  it "hides cart icon on cart page" do
+  scenario "hides cart icon on cart page" do
     visit spree.cart_path
-    lambda { find("li#link-to-cart a") }.should raise_error(Capybara::ElementNotFound)
+    expect { find("li#link-to-cart a") }.to raise_error
   end
 
-  it "prevents double clicking the remove button on cart", :js => true do
-    @product = create(:product, :name => "RoR Mug")
+  scenario "prevents double clicking the remove button on cart", js: true do
+    @product = create(:product, name: "RoR Mug")
 
     visit spree.root_path
     click_link "RoR Mug"
@@ -21,21 +21,21 @@ describe "Cart" do
     # prevent form submit to verify button is disabled
     page.execute_script("$('#update-cart').submit(function(){return false;})")
 
-    page.should_not have_selector('button#update-button[disabled]')
-    page.find(:css, '.delete img').click
-    page.should have_selector('button#update-button[disabled]')
+    page.should_not have_selector("button#update-button[disabled]")
+    page.find(:css, ".delete img").click
+    page.should have_selector("button#update-button[disabled]")
   end
 
   # Regression test for #2006
-  it "does not error out with a 404 when GET'ing to /orders/populate" do
-    visit '/orders/populate'
+  scenario "does not error out with a 404 when GET'ing to /orders/populate" do
+    visit "/orders/populate"
     within(".error") do
       page.should have_content(Spree.t(:populate_get_error))
     end
   end
 
-  it 'allows you to remove an item from the cart', :js => true do
-    create(:product, :name => "RoR Mug")
+  scenario "allows you to remove an item from the cart", js: true do
+    create(:product, name: "RoR Mug")
     visit spree.root_path
     click_link "RoR Mug"
     click_button "add-to-cart-button"
@@ -47,12 +47,12 @@ describe "Cart" do
 
   # regression for #2276
   context "product contains variants but no option values" do
-    let(:variant) { create(:variant) }
-    let(:product) { variant.product }
+    given(:variant) { create(:variant) }
+    given(:product) { variant.product }
 
-    before { variant.option_values.destroy_all }
+    background { variant.option_values.destroy_all }
 
-    it "still adds product to cart" do
+    scenario "still adds product to cart" do
       visit spree.product_path(product)
       click_button "add-to-cart-button"
 

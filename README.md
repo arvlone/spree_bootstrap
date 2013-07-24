@@ -1,8 +1,8 @@
-# SpreeBootstrap
+# Spree Bootstrap
 
 [![Build Status](https://secure.travis-ci.org/futhr/spree_bootstrap.png)](http://travis-ci.org/futhr/spree_bootstrap)
 [![Code Climate](https://codeclimate.com/github/jdutil/spree_bootstrap.png)](https://codeclimate.com/github/jdutil/spree_bootstrap)
-[![Coverage Status](https://coveralls.io/repos/futhr/spree_bootstrap/badge.png?branch=master)](https://coveralls.io/r/futhr/spree_bootstrap)
+[![Coverage Status](https://coveralls.io/repos/futhr/spree_bootstrap/badge.png?branch=2-0-stable)](https://coveralls.io/r/futhr/spree_bootstrap)
 [![Dependency Status](https://gemnasium.com/futhr/spree_bootstrap.png?travis)](https://gemnasium.com/futhr/spree_bootstrap)
 
 This project aims to replace the spree_frontend's use of the skeleton css framework in favor of Twitter Bootstrap.
@@ -12,7 +12,7 @@ This project aims to replace the spree_frontend's use of the skeleton css framew
 Add to your `Gemfile`
 
 ```ruby
-gem 'spree_bootstrap', github: 'jdutil/spree_bootstrap'
+gem 'spree_bootstrap', github: 'futhr/spree_bootstrap', branch: '2-0-stable'
 ```
 
 Bundle your dependencies and run the installation generator:

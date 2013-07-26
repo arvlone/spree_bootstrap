@@ -1,6 +1,18 @@
 <footer id="footer" class="row-fluid" data-hook>
+
+<div id="footer-first">
+	<div class="container row">
+		<%= render :partial => 'spree/shared/footerleft' %>
+	</div>
+</div>
+
+<div id="footer-second">
+<div class="container row">
   <div id="footer-left" class="span6" data-hook>
     <p><%= Spree.t :powered_by  %> <%= link_to 'Spree', 'http://spreecommerce.com/' %></p>
   </div>
   <div id="footer-right" class="span6" data-hook></div>
+</div>
+</div>
+
 </footer>

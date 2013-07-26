@@ -1,0 +1,381 @@
+/*New css*/
+a {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+a:hover {
+  text-decoration: none;
+  color: #FB3C2D;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding:0;
+}
+h5{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+input[type="file"], input[type="image"], input[type="submit"], input[type="reset"], input[type="button"], input[type="radio"], input[type="checkbox"]
+{
+  background-color: #FB3C2D ;
+  border: none;
+  border-radius: 0px;
+  padding:8px 10px 8px;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, button:hover, a.button:hover
+{
+  background-color: #FB3C2D;
+  border-radius: 5px;
+
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input
+{
+  border-radius: 0;
+}
+header {
+  border-bottom:1px solid #E4E4E4;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  }
+header ul li{
+  list-style: none;
+  }
+.top-navigation{
+  border-bottom:1px solid #d9d9db;
+  background:#FFFFFF;
+  }
+header nav li a{
+  color:#999999;
+  text-transform: capitalize;
+  font-weight: normal;
+  }
+#logo{
+  margin-top: 2.5%;
+}
+nav .nav{
+    border-bottom: none;
+    float: right;
+    margin-bottom: 0;
+  }
+  nav .nav li {
+    border-left: 1px solid #E4E4E4;
+    line-height: 30px;
+    }
+    nav .nav li#home-link{
+      border-left: none;
+    }
+    nav .nav li a{
+      font-size: 11px;
+      }
+      nav .nav li a:hover{
+        color: #222222;
+      }
+
+nav#top-nav-bar{
+  margin-bottom: 1%;
+    margin-top: 3.5%;
+}
+
+
+nav#top-nav-bar ul li a{
+  font-weight: normal;
+  text-transform: capitalize;
+  color: #999999;
+  margin: 0 15px;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  padding: 10px 0;
+  }
+  nav#top-nav-bar ul li a:hover{
+    color: #FB3C2D;
+    border-bottom: 4px solid #FB3C2D;
+  }
+
+#breadcrumbs li a{
+  color: #666666;
+}
+#breadcrumbs li a:hover,
+#breadcrumbs li span a:hover
+{
+  color: #FB3C2D;
+}
+
+/* Navigation For Mobile*/
+
+  #search-bar{display: inline-block;}
+  #search-bar input[type="search"]{
+      width: 68%;
+    }
+
+/*For slider Part CSS*/
+.slide-part{
+  position: relative;
+}
+
+.carousel-control{
+  top: 50%;
+  background: #ffffff;
+  border: none;
+  color: #000000;
+}
+.carousel-control:hover, .carousel-control:focus{
+  color: #000000;
+}
+#slider-shadow{
+  background: url("../header_shadow.png") no-repeat scroll center top;
+  background-size: 100%;
+    height: 30px;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+}
+
+
+/*For sidebar */
+nav#taxonomies{
+  text-align: left;
+}
+  nav#taxonomies .taxonomy-root
+    {border-bottom: 3px solid #222222;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 20px !important;
+    margin-top: 0; 
+    padding-bottom: 3px;}
+nav#taxonomies ul{
+  list-style: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  border:1px solid #ECECEC;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -0-border-radius: 2px;
+}
+
+nav#taxonomies ul li{
+  border-bottom: 1px solid #E4E4E4;
+
+}
+nav#taxonomies ul li a{
+  color: #666666;
+  font-size: 14px !important;
+  display: block;
+  padding: 10px 15px 10px 30px;
+  background: url("../arrow.png") no-repeat scroll 13px center;
+  text-align: left;
+}
+
+nav#taxonomies ul li a:hover{
+  color: #FB3C2D;
+  background: url("../arrow-hover.png") no-repeat scroll 13px center;
+}
+
+/*For Product page */
+ul#products li a.info{
+  padding-bottom:10px;
+  color: #999999;
+}
+ul#products li .price{
+  color: #666666;
+}
+.pagination span{
+  margin: 0 5px;
+  padding: 5px 5px 5px 7px;
+  text-align: center;
+  cursor: pointer;
+  
+}
+.pagination span a{
+  color: #ffffff;
+}
+.pagination span.page,
+.pagination span.next,
+.pagination span.last{
+  background: #222222;
+}
+.pagination span.current,
+.pagination span:hover{
+  color: #ffffff;
+  background:  #FB3C2D;
+  
+}
+
+h5.subtaxon-title a.breadcrumbs{
+  color: #222222;
+  font-size: 16px;
+}
+#sidebar_products_search label{
+  margin-top: 9px;
+}
+#sidebar_products_search{
+  background-color: #e0e0e0;
+  padding:5px 15px 50px;
+  border: 1px solid #cccccc;
+}
+#sidebar_products_search input[type="submit"]{
+  float: left;
+  margin-left: 10px;
+}
+
+aside#sidebar ul{
+  text-align: left;
+}
+#sidebar_products_search .navigation{
+  background-color:transparent;
+  color: #666666;
+  text-align: left;
+}
+#sidebar_products_search .filter-title{
+  display: inline-block;
+  padding-bottom: 3px;
+  color: #666666;
+  border-bottom: 3px solid #222222;
+  text-align:left;
+}
+#content .taxon-title{
+  text-align: left;
+}
+/*footer*/
+footer#footer{
+  border: none;
+}
+  #footer, #footer h5, #footer p {
+    color: #999999;
+    font-weight: normal;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+#footer h5 {
+    border-bottom: 2px solid #999999;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+}
+
+#footer-first{
+  background: #222222;
+  min-height: 100px;
+  padding: 30px 0 0 0;
+}
+#footer-first li a{color: #FB3C2D;}
+#footer-second{
+    background-color: #000000;
+    border-top-color: #333333 !important;
+    color: #666666;
+    padding: 15px 0 5px;
+}
+#footer a{
+  color: #999999;
+}
+#footer a:hover{
+  color: #FB3C2D;
+}
+#footer li{
+  list-style: none;
+}
+#footer-first ul{
+  margin-left: 0;
+}
+ul.producta-image li{
+  display: inline-block;
+  margin: 0 15px 25px 0;
+    border-radius: 2px 2px 2px 2px;
+    position: relative;
+    background-image: url("../plus-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #FB3C2D ;
+    position: relative;
+}
+ul.producta-image li a{
+    font-size: 8px !important;
+}
+
+ul.producta-image li a img:hover{
+  opacity: 0.2;
+  
+}
+ul#products li .product-image:hover{
+  border:1px solid #FB3C2D;
+}
+ul.articles{
+  border:1px solid #333333;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+ul.articles li{
+  border-top:1px solid #333333;
+}
+ul.articles li a.icon-chevron-right:before{
+     display: inline-block;
+     font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    padding-right: 10px;
+    text-decoration: inherit;
+}
+ul.articles li a{
+  padding: 10px 15px;  
+  display: block;
+}
+span.tooltip {
+    background: none repeat scroll 0 0 #222222;
+    bottom:50%;
+    color: #f7f7f7;
+    display: block;
+    left: -40%;
+    line-height: 20px;
+    opacity: 0;
+    padding: 3px 10px;
+    position: absolute;
+    white-space: nowrap;
+    width: auto;
+    z-index: 99999;
+    font-size: 12px !important;
+}
+span.tooltip .arrow {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 5px solid #333333;
+    bottom: -4px;
+    height: 0;
+    left: 50%;
+    margin-left: -6px;
+    position: absolute;
+    width: 0;
+}
+.tooltip {
+    position: absolute;
+    transition: all 2s ease-in-out 0s;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -webkit-transition: all 1s ease-in-out 0s;
+}
+ul.producta-image li:hover span.tooltip{opacity: 0.9 ; 
+  transform: translate(0px, -27px);
+  -webkit-transform: translate(0px, -27px);
+  -0-transform: translate(0px, -27px);}
+  #taxon{
+    display: none;
+  }

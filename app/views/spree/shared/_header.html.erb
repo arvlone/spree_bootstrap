@@ -1,5 +1,16 @@
 <header id="header" class="row-fluid" data-hook>
-  <figure id="logo" class="span4" data-hook><%= logo %></figure>
+<div class="top-navigation">
+	<div class="container row">	
+	<div class="span12">
+		<%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+	</div>
+</div>
+</div>
+
+
+<div class="container row">
+  <figure id="logo" class="span3" data-hook><%= logo %></figure>
   <%= render :partial => 'spree/shared/nav_bar' %>
-  <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+  
+ </div>
 </header>

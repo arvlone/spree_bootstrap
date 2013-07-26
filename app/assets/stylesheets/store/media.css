@@ -1,0 +1,125 @@
+.show-menu
+ {
+	margin: 0 auto;
+	font-size: 12px;
+	line-height: 20px;
+	color: #222222;
+	background-color: #E4E4E4;
+	 padding: 6px 10px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.show-menu i,
+.navigation i{
+    float: right;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+
+.navigation{
+	margin: 0 auto;
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
+	background-color:#000;
+	 padding: 6px 10px;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	clear: both;
+}
+.main-nav.collapse{
+	min-height: 0 !important;
+	margin-top: 0 !important;
+}
+.main-nav.collapse li a{
+	margin: 0 0 2px 0 !important;
+	font-size: 12px !important;
+	line-height: 30px;
+	display: block;
+	padding: 0 !important;
+}
+.main-nav.collapse li a:hover{
+	border-bottom: none !important;
+}
+
+.main-nav.collapse li{
+	margin-bottom: 0;
+	display: block;
+
+}
+
+.main-nav.collapse li#search-bar{
+	padding: 15px 0 0 0;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+.top-navigation{
+	border-bottom: none;
+	margin: 15px auto 0;
+	width: 70%;
+	}
+	nav#top-nav-bar{
+		margin: 0;
+		min-height: 0;
+	}
+
+	  .main-nav{
+	  	display: none;
+	  	height: 0;
+	  }
+	   .main-nav.collapse{
+	  	display: block;
+	  	height: 0;
+	  }
+
+header{
+	border-bottom: none;
+	}
+ }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	.top-navigation{
+	border-bottom: none;
+	margin: 15px auto 0;
+	width: 70%;
+	}
+	nav#top-nav-bar{
+		margin: 0;
+		min-height: 0;
+	}
+	.nav-collapse.collapse li,
+.main-nav.collapse li{
+	border-left: none;
+	border-top:1px solid #E4E4E4;
+	text-align: left;
+	width: 100%;
+
+	}
+	  .main-nav{
+	  	display: none;
+	  	height: 0;
+	  }
+	   .main-nav.collapse{
+	  	display: block;
+	  	height: 0;
+	  }
+
+	 nav .nav{float: none;}
+
+#footer-first,
+#footer-second{
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { ... }

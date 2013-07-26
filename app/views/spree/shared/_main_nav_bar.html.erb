@@ -1,6 +1,20 @@
+<a class="hidden-desktop show-menu" data-toggle="collapse" data-target=".nav-collapse">
+            Select a page <i class="icon-angle-down"></i>
+        </a>
 <nav class="row-fluid">
-  <ul id="main-nav-bar" class="inline" data-hook>
+  <ul class="nav inline nav-collapse" data-hook>
     <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
-    <li id="link-to-cart" data-hook><%= link_to_cart %></li>
+    <li id="shop-link" data-hook><%= link_to Spree.t(:shop), spree.products_path%></li>
+    <li id="faq-link" data-hook><%= link_to Spree.t(:Faq),'https://github.com/futhr/spree-awesome-blog'  %></li>
+    <!-- <li id="link-to-cart" data-hook><%= link_to_cart %></li> -->
+    <li id="cart-link" data-hook><%= link_to Spree.t(:Cart), spree.root_path %></li>
+    <li id="Subscribe-link" data-hook><%= link_to Spree.t(:Subscribe), 'https://github.com/futhr/spree_chimpy' %></li>
+    <li id="Account-link" data-hook><%= link_to Spree.t(:Account), spree.root_path %></li>
+    <li id="Currency-link" data-hook><%= link_to Spree.t(:Currency), 'https://github.com/futhr/spree-multi-currency'%></li>
+    <li id="Language-link" class="dropdown" data-hook><%= link_to Spree.t(:Language), 'https://github.com/futhr/spree_i18n' %></li>
   </ul>
 </nav>
+
+
+
+     

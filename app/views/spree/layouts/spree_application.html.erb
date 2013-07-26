@@ -8,10 +8,17 @@
     <%= render :partial => 'spree/shared/head' %>
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
+    <%= render :partial => 'spree/shared/header' %>
 
+    <div class="row-fluid slide-part">
+      <div id="slider-shadow" class="container row visible-desktop"></div>
+        <%= render :partial => 'spree/shared/slider' %>
+      </div>
+
+  
     <div class="container row">
 
-      <%= render :partial => 'spree/shared/header' %>
+   
 
       <div id="wrapper" class="row-fluid" data-hook>
 
@@ -26,10 +33,8 @@
           </div>
         </div>
       </div>
-
+     </div>
       <%= render :partial => 'spree/shared/footer' %>
-
-    </div>
 
     <%= render :partial => 'spree/shared/google_analytics' %>
     <script>

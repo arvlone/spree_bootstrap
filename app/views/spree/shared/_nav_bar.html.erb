@@ -1,7 +1,14 @@
-<nav id="top-nav-bar" class="span8">
-  <ul id="nav-bar" class="inline" data-hook>
-    <li id="search-bar" data-hook>
-      <%= render :partial => 'spree/shared/search' %>
-    </li>
+<a class="hidden-desktop navigation" data-toggle="collapse" data-target=".main-nav">
+            Select a page <i class="icon-angle-down"></i>
+        </a>
+<nav id="top-nav-bar" class="span9">
+  <ul id="nav-bar" class="inline main-nav" data-hook>
+  	<li id="News-link" data-hook><%= link_to Spree.t(:News), spree.root_path %></li>
+    <li id="Products-link" data-hook><%= link_to Spree.t(:Products), spree.root_path %></li>
+    <li id="Blog-link" data-hook><%= link_to Spree.t(:Blog), spree.root_path %></li>
+    <li id="Support-link" data-hook><%= link_to Spree.t(:Support), spree.root_path %></li>
+      <li id="search-bar" data-hook><%= render :partial => 'spree/shared/search' %></li>
   </ul>
 </nav>
+
+

@@ -1,0 +1,78 @@
+<div class="span4">
+	<h5>FLEX YOUR CREATIVE MUSCLES</h5>
+	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+</div>
+
+<div class="span4">
+	<h5>NEW PRODUCTS</h5>
+	<ul class="producta-image">
+	<li>
+		<span class="tooltip">Page Builder Post Page 1
+			<span class="arrow"></span>
+		</span>
+		 <%= link_to(image_tag("cibando1-85x85.jpg", :alt => 'cibando'), spree.root_path) %>
+	</li>
+
+
+	<li>
+		<span class="tooltip">Page Builder Post Page 2
+			<span class="arrow"></span>
+		</span>
+		 <%= link_to(image_tag("KREATIVA-STUDIO-camera-lens-85x85.jpg", :alt => 'Town Image'), spree.root_path) %>
+	</li>
+
+
+
+	<li>
+		<span class="tooltip">Standard Full-Width Post
+			<span class="arrow"></span>
+		</span>
+		 <%= link_to(image_tag("modal-85x85.jpg", :alt => 'modal'), spree.root_path) %>
+	</li>
+
+	<li>
+		<span class="tooltip">Standard Full-Width Post
+			<span class="arrow"></span>
+		</span>
+		 <%= link_to(image_tag("sazzi-85x85.jpg", :alt => 'sazzi'), spree.root_path) %>
+	</li>
+
+	<li>
+		<span class="tooltip">Standard Full-Width Post
+			<span class="arrow"></span>
+		</span>
+		 <%= link_to(image_tag("videoEgThumb-85x85.jpg", :alt => 'videoEgThumb'), spree.root_path) %>
+	</li>
+
+	<li>
+		<span class="tooltip">Standard Full-Width Post
+			<span class="arrow"></span>
+		</span>
+		 <%= link_to(image_tag("watch-85x85.jpg", :alt => 'watch'), spree.root_path) %>
+	</li>
+
+	<li>
+		
+		<span class="tooltip">Standard Full-Width Post
+			<span class="arrow"></span>
+		</span>
+		
+		 <%= link_to(image_tag("weather_app-85x85.jpg", :alt => 'weather_app'),spree.root_path ,:'data-toggle'=>"tooltip",) %>
+	</li>
+</ul>
+
+</div>
+
+
+<div class="span4">
+	<h5>RECENT ARTICLES</h5>
+	<ul class="articles">
+		<li><%= link_to Spree.t(:Page_Builder_Post_1), spree.root_path, :class=>"icon-chevron-right" %>
+
+		</li>
+		<li><%= link_to Spree.t(:Standard_Post_No_Sidebar), spree.root_path, :class=>"icon-chevron-right" %></li>
+		<li><%= link_to Spree.t(:Double_Sidebar_Post), spree.root_path, :class=>"icon-chevron-right" %></li>
+		<li><%= link_to Spree.t(:Gallery_Post_No_Sidebars), spree.root_path, :class=>"icon-chevron-right" %></li>
+		<li><%= link_to Spree.t(:Left_Sidebar_Post), spree.root_path, :class=>"icon-chevron-right" %></li>
+	</ul>
+</div>
